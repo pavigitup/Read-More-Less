@@ -1,5 +1,11 @@
 import {useState} from 'react'
-import {BgContainer, InnerContainer, Button, Header} from './styledComponents'
+import {
+  BgContainer,
+  InnerContainer,
+  Button,
+  Header,
+  BtnCon,
+} from './styledComponents'
 
 const ReadMore = () => {
   const [content, setContent] = useState(false)
@@ -33,9 +39,11 @@ const ReadMore = () => {
               logic without changing your component hierarchy. Hooks work
               side-by-side with existing code so you can adopt them gradually.
             </p>
-            <Button type="button" onClick={onChangeReadLessContent}>
-              Read Less
-            </Button>
+            <BtnCon>
+              <Button type="button" onClick={onChangeReadLessContent}>
+                Read Less
+              </Button>
+            </BtnCon>
           </>
         ) : (
           <>
@@ -44,9 +52,11 @@ const ReadMore = () => {
               React that we have encountered over five years of writing and
               maintaining tens of thousands of components.
             </p>
-            <Button type="button" onClick={onChangeReadMoreContent}>
-              Read More
-            </Button>
+            <BtnCon>
+              <Button type="button" onClick={onChangeReadMoreContent}>
+                Read More
+              </Button>
+            </BtnCon>
           </>
         )}
       </InnerContainer>

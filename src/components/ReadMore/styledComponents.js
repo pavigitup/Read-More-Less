@@ -13,7 +13,8 @@ export const BgContainer = styled.div`
 export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
+  padding: 0 5%;
 `
 
 export const Button = styled.button`
@@ -26,4 +27,8 @@ export const Button = styled.button`
 
 export const Header = styled.h1`
   font-family: 'Roboto';
+`
+export const BtnCon = styled.div`
+  display: flex;
+  justify-content: center;
 `
